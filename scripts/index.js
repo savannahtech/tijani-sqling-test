@@ -31,3 +31,35 @@ let show = 1;
 hamburgerBtn.addEventListener('click', toggleVisibility);
 
 closeTag.addEventListener('click', toggleVisibility);
+
+function myFunction() {
+  console.log('****8');
+  window.onscroll = function (ev) {
+    console.log('****8');
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      document.getElementByClass('body-center')[0].style.background_color =
+        'red';
+      document.getElementByClass('body-center')[0].style.opacity = 0;
+      console.log('gets heres ?>>>>>>>>');
+    }
+  };
+}
+
+// let screenWidth = window.matchMedia("(min-width: 750px)");
+// myFunction();
+
+const element = document.getElementsByClassName('body-center')[0];
+let lastScrollTop = 0;
+element.onscroll = (e) => {
+  if (element.scrollTop < lastScrollTop) {
+    // upscroll
+    document.getElementById('app-container').style.overflow = 'hidden';
+    document.getElementById('bottom-wrapper').style.display = 'none';
+    return;
+  }
+  lastScrollTop = element.scrollTop <= 0 ? 0 : element.scrollTop;
+  if (element.scrollTop + element.offsetHeight >= element.scrollHeight) {
+    document.getElementById('bottom-wrapper').style.display = 'block';
+    document.getElementById('app-container').style.overflow = 'scroll';
+  }
+};
