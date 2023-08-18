@@ -77,6 +77,21 @@
 
 .nav-logo-search {
   padding-right: 10px;
+  cursor: pointer;
+}
+
+.search-input {
+  border: none;
+  border-bottom: 1px solid var(--secondary);
+  display: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-div {
+  padding-right: 10px;
   border-right: 1px solid var(--curiousBlue);
 }
 
@@ -90,7 +105,7 @@
   background-color: var(--secondary);
   padding: 10px 15px;
   top: 58px;
-  right: 35px;
+  right: 41px;
   z-index: 100;
   border: 1px solid var(--secondary);
   border-radius: 10px;
@@ -111,7 +126,7 @@
   display: none;
   position: absolute;
   top: 48px;
-  right: 60px;
+  right: 69px;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
