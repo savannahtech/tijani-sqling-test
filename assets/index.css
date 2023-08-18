@@ -291,7 +291,7 @@
   transition: 0.4s;
   border-radius: 15px;
   margin-top: 10px;
-  height: 70px;
+  /* height: 70px; */
 }
 
 .accordion .accordion-icon {
@@ -640,7 +640,7 @@
   }
 
   .accordion {
-    height: 100px;
+    /* height: 100px; */
   }
 
   .footer-form {
@@ -692,7 +692,7 @@
     padding: 18px 18px 18px 18px;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    /* height: 110px; */
   }
 
   .accordion .accordion-icon {
