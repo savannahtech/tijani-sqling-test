@@ -2,6 +2,10 @@ var acc = document.getElementsByClassName('accordion');
 var hamburgerBtn = document.getElementById('hamburgerIcon');
 var closeTag = document.getElementById('close-tag');
 var i;
+const dropdownBtn = document.getElementById('lang-dropdown-btn');
+const dropdownWrapper = document.getElementById('lang-dropdown');
+const dropdownTriangle = document.getElementById('lang-dropdown-tri');
+let toggleDropdown = 0;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function () {
@@ -63,3 +67,15 @@ element.onscroll = (e) => {
     document.getElementById('app-container').style.overflow = 'scroll';
   }
 };
+
+dropdownBtn.addEventListener('click', () => {
+  if (!toggleDropdown) {
+    dropdownWrapper.style.display = 'block';
+    dropdownTriangle.style.display = 'block';
+    toggleDropdown = 1;
+  } else {
+    dropdownWrapper.style.display = 'none';
+    dropdownTriangle.style.display = 'none';
+    toggleDropdown = 0;
+  }
+});
