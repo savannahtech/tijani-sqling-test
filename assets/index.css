@@ -291,6 +291,7 @@
   transition: 0.4s;
   border-radius: 15px;
   margin-top: 10px;
+  /* letter-spacing: 1px; */
   /* height: 70px; */
 }
 
@@ -597,6 +598,10 @@
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .d-center {
   justify-content: center;
 }
@@ -748,6 +753,10 @@
 
   .footer-line {
     display: block;
+  }
+
+  .inner-left {
+    font-size: 12px;
   }
 }
 
