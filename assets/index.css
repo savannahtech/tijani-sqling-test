@@ -416,6 +416,9 @@ body {
   font-weight: 600;
 }
 
+.panel-facewrapper {
+}
+
 .panel-faceleft {
   padding: 5px;
   width: 65%;
@@ -854,6 +857,19 @@ body {
   .accordion .accordion-icon {
     float: none;
     margin-top: 10px;
+  }
+
+  .panel-facewrapper {
+    flex-direction: column !important;
+  }
+
+  .panel-facewrapper .panel-faceleft,
+  .panel-faceright {
+    width: 100%;
+  }
+
+  .panel-facewrapper .panel-faceleft img {
+    height: 250px;
   }
 
   .nav-right .search-d1 {
