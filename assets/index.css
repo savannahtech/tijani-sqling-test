@@ -23,14 +23,18 @@ body {
   /* font-family: 'David Libre'; */
   /* font-family: 'Fredoka'; */
   /* font-family: 'Anek Latin'; */
-  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+  /* font-family: 'IBM Plex Sans Hebrew', sans-serif; */
+  /* font-family: AtlasProAAA, arial, tahoma; */
+  /* font-family: 'M PLUS 1p', sans-serif; */
+  font-family: 'Varela Round', sans-serif;
 }
 
 #app-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 
 #app-container .app-nav {
@@ -39,6 +43,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--white);
 }
 
 .app-nav .nav-logo2 {
@@ -154,20 +163,29 @@ body {
   display: flex;
 }
 
-#app-content .left-sidebar {
+.left-sidebar {
   width: 33%;
   display: flex;
   flex-direction: row;
+
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  /* width: 350px; */
+  /* width: 291.422px; */
+  /* background-color: pink; */
+  z-index: 1;
+  top: 53px;
 }
 
-#app-content .left-sidebar .left-sidebar-bg {
+.left-sidebar .left-sidebar-bg {
   background-image: url('./images/bg2.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 83%;
 }
 
-#app-content .body-center .mobile-top-bg {
+.body-center .mobile-top-bg {
   background-image: url('./images/bg3.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,18 +193,18 @@ body {
   display: none;
 }
 
-#app-content .left-sidebar .left-sidebar-icons ul {
+.left-sidebar .left-sidebar-icons ul {
   list-style: none;
   margin-top: 63px;
   margin-left: 20px;
 }
 
-#app-content .left-sidebar .left-sidebar-icons ul li {
+.left-sidebar .left-sidebar-icons ul li {
   margin-top: 10px;
   text-align: center;
 }
 
-#app-content .left-sidebar .left-sidebar-icons ul li img {
+.left-sidebar .left-sidebar-icons ul li img {
   height: 20px;
   width: 37px;
 }
@@ -196,10 +214,22 @@ body {
   width: 22px !important;
 }
 
-#app-content .right-sidebar {
+.right-sidebar {
   width: 20%;
-  padding: 20px 100px 20px 20px;
+  /* position: relative; */
+
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  /* width: 200px; */
+  z-index: 1;
+  top: 53px;
+}
+
+.right-sidebar-wrapper {
   position: relative;
+  height: 100%;
+  padding: 20px 100px 20px 20px;
 }
 
 .right-sidebar span {
@@ -210,30 +240,32 @@ body {
   width: 30px;
 }
 
-#app-content .right-sidebar .link-wrapper {
+.right-sidebar .link-wrapper {
   list-style: none;
   margin-top: 20px;
 }
 
-#app-content .right-sidebar .link-wrapper li {
+.right-sidebar .link-wrapper li {
   margin-top: 20px;
   color: var(--primary);
   font-size: 17px;
 }
 
-#app-content .right-sidebar .link-wrapper li:hover,
+.right-sidebar .link-wrapper li:hover,
 .active {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   padding: 5px;
-  color: white !important;
+  margin-right: 3px;
+  transition: 0.4s;
+  /* color: white !important;
   border-radius: 2px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary); */
 }
 
 .right-sidebar-logo {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 54px;
   margin-bottom: 23px;
   background-color: var(--secondary);
   height: 75px;
@@ -247,23 +279,30 @@ body {
 }
 
 .right-sidebar-logo span {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--white);
 }
 
 .right-sidebar-logo img {
   height: 40px;
-  width: 70px;
+  width: 60px;
 }
 
-#app-content .body-center {
-  width: 47%;
+.body-center {
+  /* width: 47%;
   overflow-y: scroll;
   padding: 20px 10px 20px 20px;
-  height: 100%;
+  height: 100%; */
+
+  width: calc(100% - 53%);
+  position: relative;
+  /* left: 550px; */
+  left: 33%;
+  top: 53px;
+  padding-bottom: 100px;
 }
 
-#app-content .body-center::-webkit-scrollbar {
+.body-center::-webkit-scrollbar {
   display: none;
 }
 
@@ -291,24 +330,32 @@ body {
   /* background-color: var(--secondary); */
   /* background-size: cover; */
   /* height: 500px; */
+
+  width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .bottom-card {
   /* height: 200px; */
   /* background: url('./images/bg5.jpeg'); */
-  position: absolute;
-  background-color: var(--secondary);
+  /* position: absolute; */
+
   color: var(--white);
-  z-index: 99 !important;
+  /* z-index: 99 !important; */
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 40px;
+  padding: 50px 40px 30px 40px;
   /* opacity: 0.7; */
+
+  /* background: url('./images/bg5.jpg');
+  opacity: 0.5; */
 }
 
-.bottom-wrapper {
+#bottom-wrapper {
   position: relative;
+  background: url('./images/map.jpeg');
 }
 
 #content-wrapper {
@@ -338,7 +385,7 @@ body {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 40%;
   padding: 25px;
   border-radius: 20px;
   justify-content: space-between;
@@ -414,6 +461,8 @@ body {
 .panel .heading {
   font-size: 12px;
   font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.3px;
 }
 
 .panel-facewrapper {
@@ -584,6 +633,105 @@ body {
   padding-right: 10px;
 }
 
+#mobile-bottom-tab {
+  position: fixed;
+  bottom: 0;
+  height: 68px;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 4 !important;
+  padding-top: 7px;
+  display: none;
+  box-shadow: 0px -7px 6px #00000036;
+  opacity: 1;
+}
+
+.bottom-modal-div {
+  position: relative;
+  display: none;
+}
+
+.tab-modal-btn-div {
+  justify-content: space-around;
+}
+
+.tab-modal-btn-div .btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 100;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  font: normal normal normal 16px/12px Regular;
+  line-height: 12px;
+}
+
+.bottom-tab-modal {
+  height: 250px;
+  background-color: #ededed;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  z-index: 3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -3px 6px #00000045;
+  opacity: 1;
+  padding: 10px 30px;
+}
+
+.bottom-tab-modal .arrImg {
+  height: 20px;
+  cursor: pointer;
+}
+
+.bottom-tab-modal .modal-noteIcon {
+  height: 50px;
+}
+
+.bottom-tab-wrapper {
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.bottom-tab-wrapper .circle {
+  height: 50px;
+  width: 50px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -19px;
+  left: 45%;
+  right: 40%;
+  z-index: 4;
+  cursor: pointer;
+  /* -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.21);
+  opacity: 1; */
+}
+
+.bottom-tab-wrapper .circle .circle-btn {
+  height: 30px;
+  width: 30px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+}
+
+.bottom-tab-wrapper .tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bottom-tab-wrapper .tabs .tab-center {
+  padding-top: 32px;
+}
+
 /* custom tokens */
 
 .text-primary {
@@ -680,6 +828,10 @@ body {
   margin-bottom: 10px;
 }
 
+.mb-0-5 {
+  margin-bottom: 5px;
+}
+
 .mb-1-5 {
   margin-bottom: 15px;
 }
@@ -710,6 +862,10 @@ body {
 
 .mr-1 {
   margin-right: 10px;
+}
+
+.mr-0-5 {
+  margin-right: 5px;
 }
 
 .ml-1 {
@@ -760,6 +916,10 @@ body {
   justify-content: flex-end;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .spacing-1 {
   letter-spacing: 1px;
 }
@@ -794,7 +954,7 @@ body {
     width: 286px;
   }
 
-  #app-content .right-sidebar {
+  .right-sidebar {
     padding: 20px;
   }
 
@@ -825,19 +985,20 @@ body {
     flex-direction: column;
   }
 
-  #app-content .right-sidebar {
+  .right-sidebar {
     display: none;
   }
 
-  #app-content .left-sidebar {
+  .left-sidebar {
     display: none;
   }
 
-  #app-content .body-center {
+  .body-center {
     width: 100%;
+    left: 0;
   }
 
-  #app-content .body-center .mobile-top-bg {
+  .body-center .mobile-top-bg {
     display: block;
   }
 
@@ -903,6 +1064,7 @@ body {
 
   .bottom-card {
     flex-direction: column;
+    padding: 50px 20px 110px 20px;
   }
 
   .footer-form-wrapper {
@@ -924,6 +1086,10 @@ body {
 
   .inner-left {
     font-size: 12px;
+  }
+
+  #mobile-bottom-tab {
+    display: block;
   }
 }
 
