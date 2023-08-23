@@ -7,10 +7,14 @@ const dropdownWrapper = document.getElementById('lang-dropdown');
 const dropdownTriangle = document.getElementById('lang-dropdown-tri');
 const searchIcon = document.getElementsByClassName('nav-logo-search')[0];
 const searchInput = document.getElementsByClassName('search-input')[0];
+const arrDownBtn = document.getElementsByClassName('arrImg')[0];
+const bottomModalDiv = document.getElementsByClassName('bottom-modal-div')[0];
+const modalBtn = document.getElementById('toggleModalBtn');
 
 let toggleDropdown = 0;
 let show = 1;
 let toggleInputVisibity = 0;
+let toggleBottomModal = 0;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function () {
@@ -71,6 +75,8 @@ dropdownBtn.addEventListener('click', () => {
     dropdownWrapper.style.display = 'block';
     dropdownTriangle.style.display = 'block';
     toggleDropdown = 1;
+    searchInput.style.display = 'none';
+    toggleInputVisibity = 0;
   } else {
     dropdownWrapper.style.display = 'none';
     dropdownTriangle.style.display = 'none';
@@ -82,8 +88,28 @@ searchIcon.addEventListener('click', () => {
   if (!toggleInputVisibity) {
     searchInput.style.display = 'inline';
     toggleInputVisibity = 1;
+    dropdownWrapper.style.display = 'none';
+    dropdownTriangle.style.display = 'none';
+    toggleDropdown = 0;
   } else {
     searchInput.style.display = 'none';
     toggleInputVisibity = 0;
+  }
+});
+
+arrDownBtn.addEventListener('click', () => {
+  if (toggleBottomModal) {
+    bottomModalDiv.style.display = 'none';
+    toggleBottomModal = 0;
+  }
+});
+
+modalBtn.addEventListener('click', () => {
+  if (!toggleBottomModal) {
+    bottomModalDiv.style.display = 'inline';
+    toggleBottomModal = 1;
+  } else {
+    bottomModalDiv.style.display = 'none';
+    toggleBottomModal = 0;
   }
 });
