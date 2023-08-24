@@ -1411,6 +1411,11 @@ legend {
     display: block;
   }
 
+  .dotten-div,
+  .dotten-div2 {
+    height: 140px;
+  }
+
   .dotten-div3 {
     display: block;
   }
@@ -1479,6 +1484,11 @@ legend {
 
   .info-img-wrapper {
     min-height: 435px;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 120px;
   }
 }
 
