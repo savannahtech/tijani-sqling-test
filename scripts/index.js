@@ -17,13 +17,17 @@ let toggleInputVisibity = 0;
 let toggleBottomModal = 0;
 
 for (i = 0; i < acc.length; i++) {
+  const accordionTitle = acc[i].getElementsByClassName('accordion-title')[0];
   acc[i].addEventListener('click', function () {
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
+
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      if (accordionTitle) accordionTitle.style.marginBottom = '0';
     } else {
       panel.style.maxHeight = panel.scrollHeight + 'px';
+      if (accordionTitle) accordionTitle.style.marginBottom = '25px';
     }
   });
 }
