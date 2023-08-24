@@ -1253,6 +1253,7 @@ legend {
   .circle-wrapper .ci-inner {
     width: 120px;
     height: 120px;
+    padding: 5px;
   }
 
   .info-img-wrapper,
@@ -1461,6 +1462,11 @@ legend {
     width: 120px;
     height: 120px;
   }
+
+  .ci-inner-bottom {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
 
 /* For iPhone 4 Portrait or Landscape View */
@@ -1494,6 +1500,7 @@ legend {
   .circle-wrapper .ci-inner {
     width: 105px;
     height: 105px;
+    padding: 5px;
   }
 
   .info-img-wrapper {
@@ -1508,6 +1515,11 @@ legend {
   .info-img-wrapper-2 .dotten-div,
   .info-img-wrapper-2 .dotten-div2 {
     height: 120px;
+  }
+
+  .ci-inner-bottom {
+    font-size: 8px;
+    padding: 5px;
   }
 }
 
