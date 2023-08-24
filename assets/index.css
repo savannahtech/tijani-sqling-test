@@ -409,6 +409,15 @@ body {
   margin-top: 80px;
 }
 
+.footer-contact h2 {
+  font-size: 19px;
+  display: flex;
+}
+
+.footer-contact h2 .footer-icon1 {
+  margin-left: 5px;
+}
+
 /* Accordion styling */
 .accordion {
   background-color: #f8f8f8;
@@ -1416,6 +1425,11 @@ legend {
     height: 140px;
   }
 
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
+    height: 140px;
+  }
+
   .dotten-div3 {
     display: block;
   }
@@ -1488,6 +1502,11 @@ legend {
 
   .dotten-div,
   .dotten-div2 {
+    height: 120px;
+  }
+
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
     height: 120px;
   }
 }
