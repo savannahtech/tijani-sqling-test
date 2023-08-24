@@ -163,7 +163,7 @@ body {
   display: flex;
 }
 
-.app-content2 {
+#app-content2 {
   height: 100vh;
 }
 
