@@ -153,7 +153,7 @@ body {
 
 #lang-dropdown-btn {
   cursor: pointer;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 #app-container #app-content {
@@ -201,6 +201,10 @@ body {
   list-style: none;
   margin-top: 63px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-sidebar .left-sidebar-icons ul li {
@@ -214,8 +218,8 @@ body {
 }
 
 .whatsapp-icon {
-  height: 20px;
-  width: 22px !important;
+  height: 18px !important;
+  width: 17px !important;
 }
 
 .right-sidebar {
