@@ -280,13 +280,18 @@ body {
   font-size: 17px;
 }
 
-.right-sidebar .link-wrapper li:hover,
-.active {
+.right-sidebar .link-wrapper li:hover {
   padding: 5px;
   margin-right: 3px;
   transition: 0.4s;
   font-weight: bolder;
   text-shadow: 0 0 black;
+}
+
+.right-sidebar .link-wrapper .active {
+  padding: 5px;
+  margin-right: 3px;
+  transition: 0.4s;
 }
 
 .right-sidebar .link-wrapper .active {
