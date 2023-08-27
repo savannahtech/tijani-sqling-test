@@ -1,0 +1,247 @@
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 480px) {
+  .accordion {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 18px 18px 18px 18px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion .accordion-icon {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .panel-facewrapper {
+    flex-direction: column !important;
+  }
+
+  .panel-facewrapper .panel-faceleft,
+  .panel-faceright {
+    width: 100%;
+  }
+
+  .panel-facewrapper .panel-faceleft img {
+    height: 250px;
+  }
+
+  .nav-right .search-d1 {
+    display: none !important;
+  }
+
+  .nav-right .search-d3 {
+    padding: 15px;
+  }
+
+  .nav-right .search-d2 {
+    margin-right: 78px;
+  }
+
+  .app-nav .nav-logo2 {
+    display: block;
+    height: 26px;
+    width: 26px;
+    margin-left: 20px;
+  }
+
+  .app-nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-nav .nav-logo {
+    display: none;
+  }
+
+  .bottom-card {
+    flex-direction: column;
+    padding: 50px 20px 110px 20px;
+  }
+
+  .footer-form-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-form {
+    width: 95%;
+  }
+
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-line {
+    display: block;
+  }
+
+  .inner-left {
+    font-size: 12px;
+  }
+
+  #mobile-bottom-tab {
+    display: block;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 140px;
+  }
+
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
+    height: 140px;
+  }
+
+  .info-img-wrapper {
+    min-height: 600px;
+    margin-bottom: 0 !important;
+  }
+
+  .circle-wrapper .ci {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px !important;
+  }
+
+  .circle-wrapper .ci-inner {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ci-inner-bottom {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .info-img-wrapper img2 {
+    width: 253px;
+  }
+
+  .nav-right .search-d2 {
+    margin-right: 42px;
+  }
+
+  .circle-wrapper .ci {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 5px;
+  }
+
+  .circle-wrapper .ci-inner {
+    width: 105px;
+    height: 105px;
+    padding: 5px;
+  }
+
+  .info-img-wrapper {
+    min-height: 435px;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 120px;
+  }
+
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
+    height: 120px;
+  }
+
+  .ci-inner-bottom {
+    font-size: 8px;
+    padding: 5px;
+  }
+}
+
+/* Small Devices (tablets and larger phones) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-form {
+    width: 70%;
+  }
+
+  .footer-contact {
+    width: 35%;
+  }
+}
+
+/* Medium Devices (tablets landscape, small laptops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .info-img-wrapper,
+  .info-img-wrapper-2 {
+    min-height: 500px;
+  }
+
+  .circle-wrapper .ci {
+    margin-bottom: 13px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 165px;
+  }
+
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
+    height: 165px;
+  }
+
+  .circle-wrapper .ci-inner {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .right-sidebar {
+    padding: 20px;
+  }
+
+  .footer-form {
+    width: 70%;
+  }
+
+  .footer-contact {
+    width: 35%;
+  }
+
+  .right-sidebar-wrapper {
+    padding: 20px 20px 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .body-center {
+    width: 100%;
+    left: 0;
+  }
+
+  .body-center .mobile-top-bg {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .right-sidebar {
+    display: block;
+  }
+
+  .left-sidebar {
+    display: flex;
+  }
+}
+
+/* Large Devices (laptops and desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Your styles here */
+}
+
+/* Extra Large Devices (large laptops and desktops) */
+@media only screen and (min-width: 1441px) {
+  /* Your styles here */
+}
