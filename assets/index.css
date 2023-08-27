@@ -18,6 +18,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Atlas Regular';
+  src: url('./font/atlas-regular-aaa.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Atlas Medium';
+  src: url('./font/atlas-medium-aaa.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Atlas Bold';
+  src: url('./font/atlas-bold-aaa.woff2') format('woff2');
+}
+
 body {
   /* font-family: 'AtlasPro AAA', 'Regular'; */
   /* font-family: 'David Libre'; */
@@ -26,7 +39,16 @@ body {
   /* font-family: 'IBM Plex Sans Hebrew', sans-serif; */
   /* font-family: AtlasProAAA, arial, tahoma; */
   /* font-family: 'M PLUS 1p', sans-serif; */
-  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
+  font-family: 'Atlas Regular', arial, tahoma;
+}
+
+.f-med {
+  font-family: 'Atlas Medium';
+}
+
+.f-bold {
+  font-family: 'Atlas Bold';
 }
 
 #app-container {
@@ -94,6 +116,8 @@ body {
 .nav-logo-search {
   padding-right: 10px;
   cursor: pointer;
+  height: 23px;
+  margin-top: 5px;
 }
 
 .search-input {
@@ -108,7 +132,8 @@ body {
 
 .search-div {
   padding-right: 10px;
-  border-right: 1px solid var(--curiousBlue);
+  border-right: 1px solid rgb(31, 128, 191, 0.5);
+  display: flex;
 }
 
 .nav-right .search-d1 {
@@ -119,19 +144,25 @@ body {
   display: none;
   position: absolute;
   background-color: var(--secondary);
-  padding: 10px 15px;
+  padding: 10px 8px;
   top: 58px;
-  right: 41px;
+  right: 33px;
   z-index: 100;
   border: 1px solid var(--secondary);
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #lang-dropdown .lang-items {
   color: #dddd;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#lang-dropdown .i-2 {
+  font-size: 19px;
 }
 
 #lang-dropdown .lang-items:hover {
@@ -142,12 +173,12 @@ body {
   display: none;
   position: absolute;
   top: 48px;
-  right: 69px;
+  right: 64px;
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid var(--secondary);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 15px solid var(--secondary);
 }
 
 #lang-dropdown-btn {
@@ -254,6 +285,8 @@ body {
   padding: 5px;
   margin-right: 3px;
   transition: 0.4s;
+  font-weight: bolder;
+  text-shadow: 0 0 black;
 }
 
 .right-sidebar .link-wrapper .active {
@@ -306,7 +339,7 @@ body {
 .hyper-links a {
   text-decoration: none;
   color: var(--secondary);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .inner-h {
@@ -620,6 +653,7 @@ legend {
   /* height: 240px; */
   position: absolute;
   top: -62px;
+  direction: rtl;
 }
 
 .circle-wrapper .ci {
@@ -742,7 +776,7 @@ legend {
 
 .third-section {
   height: 60px !important;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .third-section .f-left {
@@ -773,9 +807,37 @@ legend {
   border-radius: 50px;
 }
 
+#s-fourth .p1 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+#s-fourth .p2 {
+  font-size: 15px;
+}
+
 #s-fourth .inner-div {
-  border-right: 1px solid var(--curiousBlue);
-  padding-right: 10px;
+  border-right: 1.5px solid var(--primary);
+  padding-right: 20px;
+}
+
+#s-fourth .inner-div .p3 {
+  letter-spacing: 0.5px;
+}
+
+#s-fourth .inner-div .p4 {
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+#s-fourth .inner-div .radio-btn {
+  border-radius: 50px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  line-height: 10px;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 #mobile-bottom-tab {
