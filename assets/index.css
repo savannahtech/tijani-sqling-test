@@ -75,10 +75,15 @@ body {
   display: none;
 }
 
+.search-d2 {
+  display: flex;
+  align-items: center;
+}
+
 .app-nav .nav-logo,
 .search-d2 img {
-  height: 50px;
-  width: 140px;
+  height: 40px;
+  width: 123px;
   margin-left: 20px;
 }
 
@@ -90,7 +95,7 @@ body {
 .nav-right .search-d3 {
   background-color: var(--secondary);
   text-align: center;
-  padding: 20px;
+  padding: 20px 12px;
   color: var(--white);
   margin-left: 10px;
 }
@@ -544,10 +549,32 @@ body {
 .p-upload {
   direction: rtl;
   background-color: #f0f0f0;
-  border-radius: 5px;
+  border-radius: 27px;
   border: 1px solid #f0f0f0;
   margin-top: 10px;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+}
+
+.p-upload button {
+  height: 100%;
+  border-radius: 27px;
+  width: 150px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.p-upload p {
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.p-uploadBtn-div {
+  height: 100%;
+  display: flex;
   align-items: center;
 }
 
@@ -1146,4 +1173,12 @@ legend {
 
 .spacing-1 {
   letter-spacing: 1px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-13 {
+  font-size: 13px;
 }
