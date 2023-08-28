@@ -3,7 +3,8 @@
   .accordion {
     display: flex;
     flex-direction: column-reverse;
-    padding: 18px 18px 18px 18px;
+    /* padding: 18px 18px 18px 18px; */
+    padding: 15px 11px 10px 10px;
     justify-content: center;
     align-items: center;
   }
@@ -11,6 +12,22 @@
   .accordion .accordion-icon {
     float: none;
     margin-top: 10px;
+    height: 12px;
+  }
+
+  .accordion .markup-text {
+    text-align: center;
+    margin-top: 1px;
+  }
+
+  .accordion .markup-icon {
+    height: 12px;
+    width: 12px;
+  }
+
+  .accordion-title {
+    font-size: 12px;
+    letter-spacing: 0px;
   }
 
   .panel-facewrapper {
@@ -115,6 +132,10 @@
     font-size: 10px;
     padding: 5px;
   }
+
+  /* .content-wrapper {
+    border: none !important;
+  } */
 }
 
 @media screen and (max-width: 320px) {
@@ -154,6 +175,7 @@
   }
 }
 
+/* 565 */
 /* Small Devices (tablets and larger phones) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .footer-form {
@@ -167,6 +189,33 @@
   .info-img-wrapper,
   .info-img-wrapper-2 {
     min-height: 600px;
+    margin-bottom: 0 !important;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 140px;
+  }
+
+  .info-img-wrapper-2 .dotten-div,
+  .info-img-wrapper-2 .dotten-div2 {
+    height: 140px;
+  }
+
+  .circle-wrapper .ci {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px !important;
+  }
+
+  .circle-wrapper .ci-inner {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ci-inner-bottom {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 
@@ -225,6 +274,22 @@
   .body-center .mobile-top-bg {
     display: block;
   }
+
+  #content-wrapper {
+    border: none;
+  }
+
+  .first-card {
+    margin: 20px;
+  }
+
+  .inner-h {
+    margin-right: 20px;
+  }
+
+  .hyper-links {
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -237,13 +302,33 @@
   }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1202px) {
+  .circle-wrapper .ci {
+    margin-bottom: 13px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle-wrapper .ci-inner {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .dotten-div,
+  .dotten-div2 {
+    height: 165px;
+  }
+}
+
 /* Large Devices (laptops and desktops) */
 @media only screen and (min-width: 1025px) and (max-width: 1439px) {
   /* Your styles here */
 
   .info-img-wrapper,
   .info-img-wrapper-2 {
-    min-height: 600px;
+    /* min-height: 500px; */
+    min-height: 375px;
   }
 
   .right-sidebar-wrapper {
