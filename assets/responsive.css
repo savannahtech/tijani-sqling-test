@@ -283,12 +283,15 @@
     margin: 20px;
   }
 
-  .inner-h {
+  .inner-h,
+  .hyper-links,
+  #s-fourth {
     margin-right: 20px;
   }
 
-  .hyper-links {
+  .third-section {
     margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
