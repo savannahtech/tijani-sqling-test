@@ -598,6 +598,13 @@ body {
   font-size: 12px;
 }
 
+.card-footer-wrapper .f-bullets {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  align-items: center;
+}
+
 .card-footer-wrapper .f-left,
 .card .f-left {
   background-color: var(--primary);
@@ -609,12 +616,12 @@ body {
 }
 
 .card-footer-wrapper .f-left {
-  padding: 15px 22px;
+  padding: 15px 25px;
 }
 
 .card-footer-wrapper .f-left p {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .card-footer-wrapper .f-btn {
@@ -1181,4 +1188,8 @@ legend {
 
 .fs-13 {
   font-size: 13px;
+}
+
+.fs-12 {
+  font-size: 12px !important;
 }
