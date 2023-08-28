@@ -43,6 +43,10 @@ body {
   font-family: 'Atlas Regular', arial, tahoma;
 }
 
+.f-reg {
+  font-family: 'Atlas Regular';
+}
+
 .f-med {
   font-family: 'Atlas Medium';
 }
@@ -1030,6 +1034,7 @@ legend {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+  font-family: 'Atlas Regular';
 }
 
 .btn-primary {
