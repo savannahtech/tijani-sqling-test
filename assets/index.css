@@ -192,7 +192,8 @@ body {
 
 #lang-dropdown-btn {
   cursor: pointer;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  height: 12px;
 }
 
 #app-content2 {
@@ -485,6 +486,12 @@ body {
   color: var(--secondary) !important;
 }
 
+.accordion .span3 {
+  border-right: 1px solid #a4bed0 !important;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
 #content-wrapper .active {
   border-bottom: none !important;
   background-color: #f8f8f8 !important;
@@ -584,7 +591,7 @@ body {
 
 .inner-left {
   border-right: 1px solid #a4bed0 !important;
-  padding-right: 5px;
+  padding-right: 8px;
   margin-right: 5px;
 }
 
