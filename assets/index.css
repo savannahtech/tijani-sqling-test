@@ -75,10 +75,15 @@ body {
   display: none;
 }
 
+.search-d2 {
+  display: flex;
+  align-items: center;
+}
+
 .app-nav .nav-logo,
 .search-d2 img {
-  height: 50px;
-  width: 140px;
+  height: 40px;
+  width: 123px;
   margin-left: 20px;
 }
 
@@ -90,7 +95,7 @@ body {
 .nav-right .search-d3 {
   background-color: var(--secondary);
   text-align: center;
-  padding: 20px;
+  padding: 20px 12px;
   color: var(--white);
   margin-left: 10px;
 }
@@ -281,9 +286,9 @@ body {
 }
 
 .right-sidebar .link-wrapper li:hover {
-  padding: 5px;
-  margin-right: 3px;
-  transition: 0.4s;
+  /* padding: 5px; */
+  /* margin-right: 3px;
+  transition: 0.4s; */
   font-weight: bolder;
   text-shadow: 0 0 black;
 }
@@ -358,6 +363,11 @@ body {
   padding: 25px;
   margin-top: 40px;
   border-radius: 5px;
+}
+
+.first-card button {
+  padding: 10px 12px;
+  border-radius: 10px;
 }
 
 #bottom-wrapper {
@@ -445,7 +455,8 @@ body {
   margin-top: 10px;
 }
 
-.accordion .accordion-icon {
+.accordion .accordion-icon,
+.accordion #Expand_Item {
   float: left;
   margin-top: 25px;
 }
@@ -483,6 +494,7 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   color: var(--primary);
+  opacity: 1;
 }
 
 .panel .heading {
@@ -532,6 +544,38 @@ body {
   font-size: 14px;
   opacity: 1;
   text-align: center;
+}
+
+.p-upload {
+  direction: rtl;
+  background-color: #f0f0f0;
+  border-radius: 27px;
+  border: 1px solid #f0f0f0;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+}
+
+.p-upload button {
+  height: 100%;
+  border-radius: 27px;
+  width: 150px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.p-upload p {
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.p-uploadBtn-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .inner-left {
@@ -675,7 +719,7 @@ legend {
 }
 
 .info-img-wrapper-2 .circle-wrapper .ci {
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--curiousBlue);
 }
 
 .circle-wrapper .ci-inner {
@@ -687,7 +731,7 @@ legend {
 }
 
 .info-img-wrapper-2 .circle-wrapper .ci-inner {
-  border: 4px solid var(--secondary);
+  border: 4px solid var(--curiousBlue);
 }
 
 .ci-inner-bottom {
@@ -709,7 +753,7 @@ legend {
 }
 
 .info-img-wrapper-2 .ci-inner-top {
-  background: var(--secondary);
+  background: var(--curiousBlue);
 }
 
 .ci-innter-center {
@@ -1129,4 +1173,12 @@ legend {
 
 .spacing-1 {
   letter-spacing: 1px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-13 {
+  font-size: 13px;
 }
