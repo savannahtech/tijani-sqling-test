@@ -10,6 +10,8 @@ const searchInput = document.getElementsByClassName('search-input')[0];
 const arrDownBtn = document.getElementsByClassName('arrImg')[0];
 const bottomModalDiv = document.getElementsByClassName('bottom-modal-div')[0];
 const modalBtn = document.getElementById('toggleModalBtn');
+const headerBtn = document.getElementById('header-btn');
+const headerBtn2 = document.getElementById('header-btn-2');
 
 let toggleDropdown = 0;
 let show = 1;
@@ -115,5 +117,29 @@ modalBtn.addEventListener('click', () => {
   } else {
     bottomModalDiv.style.display = 'none';
     toggleBottomModal = 0;
+  }
+});
+
+headerBtn.addEventListener('click', () => {
+  if (headerBtn.classList.contains('btn-primary')) {
+    headerBtn.innerHTML = '3 | משרות מי שבע';
+    headerBtn.classList.add('btn-primary-outline');
+    headerBtn.classList.remove('btn-primary');
+  } else {
+    headerBtn.innerHTML = '18 | קבלנים ונותני שירות';
+    headerBtn.classList.remove('btn-primary-outline');
+    headerBtn.classList.add('btn-primary');
+  }
+});
+
+headerBtn2.addEventListener('click', () => {
+  if (headerBtn2.classList.contains('btn-primary')) {
+    headerBtn2.innerHTML = '45 | כל הנושאים';
+    headerBtn2.classList.add('btn-primary-outline');
+    headerBtn2.classList.remove('btn-primary');
+  } else {
+    headerBtn2.innerHTML = '4 | מכרזי בכירים';
+    headerBtn2.classList.remove('btn-primary-outline');
+    headerBtn2.classList.add('btn-primary');
   }
 });
