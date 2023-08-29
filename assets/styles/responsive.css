@@ -131,6 +131,10 @@
   .p-uploadBtn-div {
     display: none;
   }
+
+  .p-upload p {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
