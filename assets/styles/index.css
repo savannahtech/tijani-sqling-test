@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Atlas Regular', arial, tahoma;
 }
 
 @font-face {
@@ -50,6 +51,10 @@ body {
 ::placeholder {
   color: #d0d0d0;
   opacity: 1;
+  font-family: 'Atlas Regular';
+}
+
+span {
   font-family: 'Atlas Regular';
 }
 
@@ -587,14 +592,9 @@ body {
 
 .p-upload {
   direction: rtl;
-  background-color: #f0f0f0;
-  border-radius: 27px;
-  border: 1px solid #f0f0f0;
-  margin-top: 10px;
+  margin-top: 12px;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
   height: 40px;
 }
 
@@ -615,6 +615,12 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 27px;
+  border: 1px solid #f0f0f0;
+  justify-content: space-between;
+  width: 80%;
+  padding: 5px;
 }
 
 .inner-left {
