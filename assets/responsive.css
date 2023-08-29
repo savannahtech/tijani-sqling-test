@@ -133,9 +133,9 @@
     padding: 5px;
   }
 
-  /* .content-wrapper {
-    border: none !important;
-  } */
+  .p-uploadBtn-div {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -322,6 +322,10 @@
   .dotten-div2 {
     height: 165px;
   }
+
+  .p-uploadBtn-div {
+    display: none;
+  }
 }
 
 /* Large Devices (laptops and desktops) */
@@ -337,6 +341,10 @@
   .right-sidebar-wrapper {
     padding: 20px 20px 20px 30px;
   }
+
+  /* .p-uploadBtn-div {
+    display: none;
+  } */
 }
 
 /* Extra Large Devices (large laptops and desktops) */
