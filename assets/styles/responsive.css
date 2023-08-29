@@ -3,7 +3,6 @@
   .accordion {
     display: flex;
     flex-direction: column-reverse;
-    /* padding: 18px 18px 18px 18px; */
     padding: 15px 11px 10px 10px;
     justify-content: center;
     align-items: center;
@@ -175,7 +174,6 @@
   }
 }
 
-/* 565 */
 /* Small Devices (tablets and larger phones) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .footer-form {
@@ -334,17 +332,12 @@
 
   .info-img-wrapper,
   .info-img-wrapper-2 {
-    /* min-height: 500px; */
     min-height: 375px;
   }
 
   .right-sidebar-wrapper {
     padding: 20px 20px 20px 30px;
   }
-
-  /* .p-uploadBtn-div {
-    display: none;
-  } */
 }
 
 /* Extra Large Devices (large laptops and desktops) */
