@@ -55,6 +55,11 @@ body {
   font-family: 'Atlas Bold';
 }
 
+::placeholder {
+  color: #d0d0d0;
+  opacity: 1;
+}
+
 #app-container {
   height: 100vh;
   display: flex;
@@ -1076,6 +1081,7 @@ legend {
   border-radius: 40px;
   background-color: var(--gallery);
   border: 1px solid var(--gallery);
+  padding-right: 10px;
 }
 
 .custom-textarea {
