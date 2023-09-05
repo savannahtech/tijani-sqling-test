@@ -66,7 +66,7 @@ span {
 }
 
 #app-container .app-nav {
-  height: 53px;
+  height: 55px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: flex;
   flex-direction: row;
@@ -85,26 +85,33 @@ span {
 .search-d2 {
   display: flex;
   align-items: center;
+  column-gap: 1rem;
 }
 
 .app-nav .nav-logo,
 .search-d2 img {
   height: 40px;
   width: 123px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 #app-container .app-nav .nav-right {
   display: flex;
   flex-direction: row;
+  column-gap: 1rem;
 }
 
 .nav-right .search-d3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary);
-  text-align: center;
-  padding: 20px 12px;
+  /* text-align: center; */
+  /* padding: 20px 12px; */
+  width: 55px;
+  height: 55px;
   color: var(--white);
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .nav-right .search-d3 #hamburgerIcon img {
@@ -122,14 +129,14 @@ span {
 }
 
 .nav-logo-text {
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 .nav-logo-search {
-  padding-right: 10px;
+  /* padding-right: 10px; */
   cursor: pointer;
   height: 23px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .search-input {
@@ -143,13 +150,27 @@ span {
 }
 
 .search-div {
-  padding-right: 10px;
-  border-right: 1px solid rgb(31, 128, 191, 0.5);
+  /* padding-right: 10px;
+  border-right: 1px solid rgb(31, 128, 191, 0.3); */
   display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.search-div .search-hr{
+  width:1px;
+  height: 19px;
+  background-color: var(--deepblue);
+  opacity: 0.2;
 }
 
 .nav-right .search-d1 {
   position: relative;
+  display: flex;
+  align-items: center;
+  /* column-gap: 1rem; */
+}
+.nav-right .search-d1 span{
+  margin-right: 1rem;
 }
 
 #lang-dropdown {
@@ -203,12 +224,12 @@ span {
 }
 
 .left-sidebar {
-  width: 33%;
+  width: 32%;
   display: flex;
   flex-direction: row;
   position: fixed;
   left: 0;
-  height: 100vh;
+  height: 85vh;
   z-index: 1;
   top: 53px;
   display: none;
@@ -218,9 +239,16 @@ span {
   background-image: url('../images/bg2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 83%;
+  object-fit: contain;
+  background-position: center;
+  width: 647px;
 }
-
+.body-header{
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  margin-right: 15px;
+}
 .body-center .mobile-top-bg {
   background-image: url('../images/bg3.png');
   background-repeat: no-repeat;
@@ -338,9 +366,9 @@ span {
 }
 
 .body-center {
-  width: calc(100% - 53%);
+  width: calc(100% - 56%);
   position: relative;
-  left: 33%;
+  left: 36%;
   top: 53px;
   padding-bottom: 100px;
   padding-top: 20px;
@@ -353,15 +381,18 @@ span {
 .hyper-links a {
   text-decoration: none;
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .inner-h {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   color: var(--secondary);
 }
 
 .first-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
   background-color: var(--bg-primary);
   color: var(--primary);
   padding: 25px;
@@ -465,7 +496,19 @@ span {
   float: left;
   margin-top: 25px;
 }
-
+.accordion.active #Expand_Item{
+  display: none;
+}
+#accordion-close-tag{
+  display: none;
+}
+ .accordion.active #accordion-close-tag{
+  float: left;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 200;
+  display: block;
+ }
 .accordion-title {
   font-size: 10px;
 }
@@ -1066,8 +1109,13 @@ legend {
 
 /* button styling */
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  width: 147px;
+  height: 41px; 
   border: none;
   cursor: pointer;
   font-family: 'Atlas Regular';
@@ -1137,7 +1185,11 @@ legend {
 }
 
 .mt-1-5 {
-  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 12px;
+  /* margin-top: 15px; */
 }
 
 .pt-1 {

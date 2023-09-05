@@ -12,6 +12,9 @@ const bottomModalDiv = document.getElementsByClassName('bottom-modal-div')[0];
 const modalBtn = document.getElementById('toggleModalBtn');
 const headerBtn = document.getElementById('header-btn');
 const headerBtn2 = document.getElementById('header-btn-2');
+const accordionBtnClose = document.querySelector('#accordion-close-tag')
+const accordionBtnOpen = document.querySelector('#Expand_Item')
+
 
 let toggleDropdown = 0;
 let show = 1;
@@ -26,10 +29,18 @@ for (i = 0; i < acc.length; i++) {
 
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
-      if (accordionTitle) accordionTitle.style.marginBottom = '0';
+      if (accordionTitle) {
+        accordionTitle.style.marginBottom = '0';
+        accordionBtnOpen.classList.remove('active');
+        accordionBtnClose.classList.remove('active')
+        
+      }
+
     } else {
       panel.style.maxHeight = panel.scrollHeight + 'px';
       if (accordionTitle) accordionTitle.style.marginBottom = '25px';
+      accordionBtnOpen.addClass = 'active';
+      accordionBtnClose.addClass = 'active'
     }
   });
 }
