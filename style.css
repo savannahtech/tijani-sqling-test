@@ -1,0 +1,133 @@
+:root {
+    --primary: #638b5d;
+    --secondary: #256693;
+    --white: #fff;
+    --bg-primary: #eff3ee;
+    --lightgreen: #bdd85a;
+    --deepblue: #0b5583;
+    --curiousBlue: #1f80bf;
+    --gallery: #f0f0f0;
+    --mantis: #80c675;
+  }
+  
+  * {
+    text-align: right;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atlas Regular', arial, tahoma;
+  }
+  
+  @font-face {
+    font-family: 'Atlas Regular';
+    src: url('../font/atlas-regular-aaa.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Atlas Medium';
+    src: url('../font/atlas-medium-aaa.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Atlas Bold';
+    src: url('../font/atlas-bold-aaa.woff2') format('woff2');
+  }
+  body {
+    font-family: 'Atlas Regular', arial, tahoma;
+  }
+  
+  .f-reg {
+    font-family: 'Atlas Regular';
+  }
+  
+  .f-med {
+    font-family: 'Atlas Medium';
+  }
+  
+  .f-bold {
+    font-family: 'Atlas Bold';
+  }
+  
+  ::placeholder {
+    color: #d0d0d0;
+    opacity: 1;
+    font-family: 'Atlas Regular';
+  }
+  
+  span {
+    font-family: 'Atlas Regular';
+  }
+  #app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 5rem;
+  }
+  .app-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 71px;
+    background-color: var(--white);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position:fixed;
+  }
+  .nav-logo2{
+    display: none;
+  }
+  .app-nav .nav-logo{
+    width: 147px;
+    height: 43px;
+  }
+  .nav-right{
+    display: flex;
+    align-items: center;
+    column-gap:1rem;
+  }
+  .nav-right .search-d1{
+    display:flex;
+    align-items: center;
+  }
+  .nav-right .search-d1 img,.search-div img{
+    width:16px;
+    height:16px;
+  }
+  .search-div{
+    display: flex;
+    align-items: center;
+  }
+  .search-div hr{
+    width:2px;
+    height: 16px;
+    background-color: var(--deepblue);
+    opacity: 0.5;
+  }
+ .search-div .search-input{
+    display: none;
+ }
+ .search-d2 img{
+    width: 153px;
+    height: 46px;
+ }
+ #lang-dropdown{
+    display: none;
+ }
+ .search-d3{
+    /* position: absolute;
+    right:0;
+    top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: var(--deepblue);
+ }
+ .search-d3 span{
+    display: none;
+ }
+ .search-d3 img{
+    width: 25px;
+    height: 10px;
+ }
