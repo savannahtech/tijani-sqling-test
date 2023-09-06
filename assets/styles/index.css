@@ -224,7 +224,7 @@ span {
 }
 
 .left-sidebar {
-  width: 32%;
+  width: 28%;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -241,7 +241,8 @@ span {
   background-size: cover;
   object-fit: contain;
   background-position: center;
-  width: 647px;
+  width: 100% !important;
+  max-width: 500px;
 }
 .body-header{
   display: flex;
@@ -366,9 +367,9 @@ span {
 }
 
 .body-center {
-  width: calc(100% - 56%);
+  width: calc(100% - 52%);
   position: relative;
-  left: 36%;
+  left: 32%;
   top: 53px;
   padding-bottom: 100px;
   padding-top: 20px;
@@ -417,6 +418,7 @@ span {
   flex-direction: row;
   width: 100%;
   padding: 50px 40px 30px 40px;
+
 }
 
 #bottom-wrapper {
@@ -442,10 +444,11 @@ span {
 }
 
 .footer-form-wrapper {
-  width: 62%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 .footer-form {
@@ -459,22 +462,53 @@ span {
 }
 
 .footer-contact {
-  width: 24%;
+  width: 28%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 1rem;
   margin-top: 80px;
 }
 
 .footer-contact h2 {
-  font-size: 19px;
+  font-size: 25px;
   display: flex;
 }
 
 .footer-contact h2 .footer-icon1 {
   margin-left: 5px;
 }
-
+.footer-contact-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+.footer-contact-info-one{
+  display: flex;
+  align-items: center;
+  column-gap: .2rem;
+}
+.footer-contact-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: .4rem;
+}
+.social-media-icons {
+  display: flex;
+  align-items: center;
+}
+.social-media-icons img:nth-child(1){
+  width: 30px;
+  height: 30px;
+}
+.social-media-icons img:nth-child(2){
+  width: 40px;
+  height: 40px;
+}
+.social-media-icons img:nth-child(3){
+  width: 30px;
+  height: 30px;
+}
 /* Accordion styling */
 .accordion {
   background-color: #f8f8f8;
@@ -567,7 +601,7 @@ span {
 
 .panel-faceleft {
   padding: 5px;
-  width: 65%;
+  width: 68%;
 }
 
 .panel-faceleft .panel-bullets-div {
@@ -589,29 +623,50 @@ span {
 }
 
 .panel-faceleft .panel-bullets p {
-  font-size: 0.74rem;
+  font-size: 0.75rem;
 }
 
 .panel-faceleft .pdf-text-div {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .panel-faceleft .pdf-text-div,
 .pdf-text-div2 {
   display: flex;
   justify-content: right;
+  margin-right: .8rem;
   border: 1px solid var(--secondary);
   border-radius: 25px;
-  padding: 2px 10px;
+ 
 }
-
-.panel-faceright {
-  width: 36%;
-  border: 0.5px solid var(--secondary);
-  padding: 20px;
+.pdf-text-div{
+  width: 125px;
+  height: auto;
+  padding: 2px 8px;
+}
+.pdf-text-div2{
+  width:165px !important;
+  align-items: center;
+  padding: 2px 8px;
+}
+.pdf-btn:nth-child(1) {
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.pdf-btn p{
+  font-family: 'Atlas-regular';
+  font-size: 0.75rem;
+}
+.panel-faceright {
+  width: 32%;
+  border: 0.5px solid var(--secondary);
+  padding:5px 10px;
+  display: flex;
+  justify-content: center;
   border-radius: 8px;
   font-size: 20px;
+  height: auto;
 }
 
 .panel-faceright img {
@@ -628,7 +683,8 @@ span {
 }
 
 .panel-faceright p:nth-child(4) {
-  font-size: 14px;
+  font-size: 11.5px;
+  line-height: 22px;
   opacity: 1;
   text-align: center;
 }
@@ -642,20 +698,29 @@ span {
 }
 
 .p-upload button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .4rem;
   height: 100%;
   border-radius: 27px;
-  width: 150px;
-  font-size: 16px;
+  /* width: 150px; */
+  font-size: 0.75rem;
+  width: 200px;
   margin-right: 20px;
 }
 
 .p-upload p {
-  font-size: 13px;
+  font-size: 0.75rem;
   color: var(--secondary);
+}
+.p-upload button img{
+  width: 18px;
+  height: 18px;
 }
 
 .p-uploadBtn-div {
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   background-color: #f0f0f0;
@@ -663,9 +728,12 @@ span {
   border: 1px solid #f0f0f0;
   justify-content: space-between;
   width: 80%;
-  padding: 5px;
+  padding:5px 15px 5px 5px;
 }
-
+.p-uploadBtn-div img{
+  width: 30px;
+  height: 30px;
+}
 .inner-left {
   border-right: 1px solid #a4bed0 !important;
   padding-right: 8px;
@@ -714,10 +782,12 @@ span {
 .card-footer-wrapper .f-btn {
   background-color: white !important;
   color: var(--primary);
-  padding: 3px 12px !important;
-  margin-top: 15px;
-  font-weight: 600;
+  padding: 3px 14px !important;
+  margin-top: 12px;
+  font-weight: 700;
   border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 .card-footer-wrapper .f-right,
@@ -969,7 +1039,7 @@ legend {
   text-decoration: underline;
   letter-spacing: 1px;
 }
-
+/* 
 #s-fourth .inner-div .radio-btn {
   border-radius: 50px;
   font-size: 9px;
@@ -978,8 +1048,18 @@ legend {
   line-height: 10px;
   background-color: var(--secondary);
   color: var(--white);
+} */
+#s-fourth .inner-div button{
+  border-radius: 50px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  line-height: 10px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  outline: none;
 }
-
 #mobile-bottom-tab {
   position: fixed;
   bottom: 0;

@@ -348,6 +348,7 @@
 
 /* Large Devices (laptops and desktops) */
 @media only screen and (min-width: 1025px) and (max-width: 1439px) {
+
   /* Your styles here */
 
   .info-img-wrapper,
@@ -363,4 +364,5 @@
 /* Extra Large Devices (large laptops and desktops) */
 @media only screen and (min-width: 1440px) {
   /* Your styles here */
+ 
 }
