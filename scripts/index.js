@@ -12,8 +12,9 @@ const bottomModalDiv = document.getElementsByClassName('bottom-modal-div')[0];
 const modalBtn = document.getElementById('toggleModalBtn');
 const headerBtn = document.getElementById('header-btn');
 const headerBtn2 = document.getElementById('header-btn-2');
-const accordionBtnClose = document.querySelector('#accordion-close-tag')
-const accordionBtnOpen = document.querySelector('#Expand_Item')
+const accordionBtnClose = document.querySelector('#accordion-close-tag');
+const accordionBtnOpen = document.querySelector('#Expand_Item');
+const panel = document.querySelector('.panel');
 
 
 let toggleDropdown = 0;
@@ -41,6 +42,17 @@ for (i = 0; i < acc.length; i++) {
       if (accordionTitle) accordionTitle.style.marginBottom = '25px';
       accordionBtnOpen.addClass = 'active';
       accordionBtnClose.addClass = 'active'
+      let Newdiv = document.createElement('div');
+      Newdiv.className = 'accordion-arrow-border accordion'
+      Newdiv.id='accordion'
+      let iconsArror = document.createElement('img');
+      iconsArror.src= '../../../assets/images/arrowDwnIcon.png'
+      iconsArror.id='accordion-close-tag';
+      Newdiv.appendChild(iconsArror)
+      Newdiv.textContent='x'
+      console.log(Newdiv)
+      panel.insertAdjacentElement('afterend',Newdiv)
+
     }
   });
 }

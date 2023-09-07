@@ -251,10 +251,6 @@ span {
   margin-right: 15px;
 }
 .body-center .mobile-top-bg {
-  background-image: url('../images/bg3.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
   display: none;
 }
 
@@ -510,6 +506,7 @@ span {
   height: 30px;
 }
 /* Accordion styling */
+
 .accordion {
   background-color: #f8f8f8;
   color: var(--secondary);
@@ -536,6 +533,9 @@ span {
 #accordion-close-tag{
   display: none;
 }
+.accordion-arrow-border{
+  display: none;
+}
  .accordion.active #accordion-close-tag{
   float: left;
   margin-top: 25px;
@@ -546,7 +546,9 @@ span {
 .accordion-title {
   font-size: 10px;
 }
-
+.accordion-title.second{
+  display: none;
+}
 .accordion .markup-icon {
   width: 20px;
   height: 20px;
@@ -753,7 +755,7 @@ span {
   font-size: 12px;
 }
 
-.card-footer-wrapper .f-bullets {
+.card-footer-wrapper .f-bullets ,.f-bullet-content{
   display: flex;
   flex-direction: row;
   direction: rtl;
@@ -804,7 +806,9 @@ span {
 .card-footer-wrapper .f-right img {
   width: 40px;
 }
-
+.fs-12-mobile{
+  display: none;
+}
 .info-img-wrapper .plane-div .plane-img {
   height: 50px;
   position: absolute;
@@ -1129,8 +1133,8 @@ legend {
   align-items: center;
   position: absolute;
   top: -19px;
-  left: 45%;
-  right: 40%;
+  left: 46%;
+  right: 50%;
   z-index: 4;
   cursor: pointer;
 }

@@ -1,20 +1,119 @@
 /* Extra Small Devices (phones) */
 @media only screen and (max-width: 480px) {
+  .body-header{
+    margin-right: 0;
+  }
+  .body-center .mobile-top-bg{
+    height: 250px !important;
+  }
+  .card-footer-wrapper{
+    height: 262px;
+  }
+  .card-footer-wrapper .f-left p{
+    font-size: 20px;
+  }
+  .f-bullets{
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    row-gap: .5rem;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: .8rem;
+    margin-bottom: .8rem;
+  }
+  .f-bullets .f-bullet-content span{
+    font-size: 14px;
+  }
+  .f-left .fs-12{
+   display: none;
+  }
+  .fs-12-mobile{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin-top: .2rem;
+    font-size: 13px;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: .8rem;
+    margin-bottom: .4rem;
+  }
+  .f-right.green-card img{
+    margin-top: 1.5rem;
+    align-self: self-start;
+  }
+  /* .accordion-section{
+    position: relative;
+  } */
   .accordion {
     display: flex;
     flex-direction: column-reverse;
-    padding: 15px 11px 10px 10px;
+    padding: 15px 0px 0px 0px;
     justify-content: center;
-    align-items: center;
+    align-items: end;
   }
-
+  .accordion div:nth-child(2){
+    margin-right: .5rem;
+  }
+  .mt-1{
+    margin-top: 5px;
+  }
   .accordion .accordion-icon,
   .accordion #Expand_Item {
     float: none;
-    margin-top: 10px;
-    height: 12px;
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
   }
-
+  .accordion.active #accordion-close-tag{
+    display: none !important;
+   }
+  .accordion-icon-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: .8rem;
+    width: 100%;
+    background: #EDEDED 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 14px 14px;
+    opacity: 1;
+    padding: 2px 0px;
+  }
+  .accordion-arrow-border{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0px 0px 14px 14px;
+    background: #EDEDED 0% 0% no-repeat padding-box;
+    padding: 2px 10px;
+    margin-top: 0;
+  }
+  .accordion-arrow-border img{
+    width: 10px;
+    height: 10px;
+  }
+  .accordion.active .accordion-icon-border{
+    position: relative;
+    background:transparent !important;
+    border-radius: 0px;
+  }
+  .accordion.active .accordion-icon-border::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 1.5px;
+    background: #256693;
+    opacity: 0.1;
+  }
+  /* .accordion.active span{
+    position: absolute;
+    bottom: 0;
+  } */
   .accordion .markup-text {
     text-align: center;
     margin-top: 1px;
@@ -28,8 +127,18 @@
   .accordion-title {
     font-size: 12px;
     letter-spacing: 0px;
+    margin-right: 1.2rem;
   }
-
+ .accordion-title.second{
+  display: block;
+ }
+ .accordion-div div:nth-child(1){
+  flex:4;
+  padding-right: 10px;
+ }
+ .accordion-div div:nth-child(2){
+  flex:1;
+ }
   .panel-facewrapper {
     flex-direction: column !important;
   }
@@ -113,7 +222,7 @@
   }
 
   .info-img-wrapper {
-    min-height: 600px;
+    min-height: 520px;
     margin-bottom: 0 !important;
   }
 
@@ -150,6 +259,37 @@
   .p-upload p {
     font-size: 10px;
     color: #d0d0d0;
+  }
+  .tab-left,.tab-center,.tab-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: .3rem;
+  }
+  .circle-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
+    background-image: url('../images/snake.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    gap: 1rem;
+    position: relative;
+    top:-.5rem;
+  }
+  .dotten-div,.dotten-div2{
+    display: none;
+  }
+  .circle-wrapper .ci{
+    position: relative;
+    top: -5rem;
+  }
+  .circle-wrapper .ci:nth-child(1),.circle-wrapper .ci:nth-child(2){
+    top: -4rem;
+  }
+  .plane-img{
+    display: none;
   }
 }
 
@@ -291,6 +431,10 @@
 
   .body-center .mobile-top-bg {
     display: block;
+    background-image: url('../images/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
   }
 
   #content-wrapper {
