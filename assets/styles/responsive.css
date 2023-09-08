@@ -300,6 +300,15 @@
     position: relative;
     top:-.5rem;
   } 
+  .info-img-wrapper-2 .circle-wrapper {
+    background-image: url('../images/snake2.svg');
+  }
+  .info-img-wrapper .circle-header {
+    width: 90%;
+  }
+  .info-img-wrapper .circle-header span{
+    width: 100px;
+  }
   .dotten-div,.dotten-div2{
     display: none;
   }
@@ -327,7 +336,7 @@
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   .nav-right .search-d2 {
     margin-right: 42px;
   }
@@ -347,7 +356,9 @@
   .info-img-wrapper {
     min-height: 435px;
   }
-
+  .info-img-wrapper .circle-header span{
+    width: 95px;
+  }
   .dotten-div,
   .dotten-div2 {
     height: 120px;
