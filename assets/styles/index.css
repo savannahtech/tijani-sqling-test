@@ -405,6 +405,8 @@ span {
 #bottom-wrapper {
   width: 100%;
   position: relative;
+  background: url('../images/map.jpeg');
+  background-size: auto 100%;
   z-index: 3;
 }
 
@@ -415,12 +417,6 @@ span {
   width: 100%;
   padding: 50px 40px 30px 40px;
 
-}
-
-#bottom-wrapper {
-  position: relative;
-  background: url('../images/map.jpeg');
-  background-size: auto 100%;
 }
 
 #content-wrapper {
@@ -543,6 +539,10 @@ span {
   font-weight: 200;
   display: block;
  }
+ .accordion-icon-border-two{
+  display: none;
+ }
+
 .accordion-title {
   font-size: 10px;
 }
@@ -928,29 +928,31 @@ legend {
 .dotten-div {
   border: 2.7px dotted var(--primary);
   height: 120px;
-  border-radius: 50px;
+  border-radius: 60px;
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 41px;
   opacity: 1;
+  padding-bottom: 1rem;
 }
 
 .dotten-div2 {
   border: 2.7px dotted var(--primary);
   height: 120px;
-  border-radius: 50px;
+  border-radius: 60px;
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top: transparent;
   opacity: 1;
+  padding-bottom: 1rem;
 }
 
 .info-img-wrapper-2 .dotten-div {
-  border: 2.7px dotted var(--primary);
+  border: 2.7px dotted var(--deepblue);
   height: 120px;
-  border-radius: 50px;
+  border-radius: 60px;
   /* border-right: 0; */
   border-right: none;
   border-top-right-radius: 0;
@@ -961,9 +963,9 @@ legend {
 }
 
 .info-img-wrapper-2 .dotten-div2 {
-  border: 2.7px dotted var(--primary);
+  border: 2.7px dotted var(--deepblue);
   height: 120px;
-  border-radius: 50px;
+  border-radius: 60px;
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;

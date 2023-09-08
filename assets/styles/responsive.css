@@ -67,8 +67,17 @@
   .accordion.active #accordion-close-tag{
     display: none !important;
    }
-  .accordion-icon-border{
-    display: flex;
+   .accordion-section .accordion-icon-border-two{
+    display: none;
+   }
+   .accordion-section .accordion-icon-border-two img{
+     width: 15px;
+     height: 15px;
+     opacity: 0.4;
+   }
+  .accordion-icon-border,
+  .accordion-section.active .accordion-icon-border-two{
+    display: flex !important;
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -214,6 +223,12 @@
   .dotten-div,
   .dotten-div2 {
     height: 140px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  .dotten-div{
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
   }
 
   .info-img-wrapper-2 .dotten-div,
@@ -225,7 +240,13 @@
     min-height: 520px;
     margin-bottom: 0 !important;
   }
-
+  .circle-wrapper {
+    /* background-image: url('../images/snake.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    gap: 1rem; */
+  }
   .circle-wrapper .ci {
     width: 130px;
     height: 130px;
@@ -267,7 +288,7 @@
     flex-direction: column;
     row-gap: .3rem;
   }
-  .circle-wrapper {
+  /* .circle-wrapper {
     display: grid !important;
     grid-template-columns: repeat(2,1fr);
     background-image: url('../images/snake.svg');
@@ -277,21 +298,22 @@
     gap: 1rem;
     position: relative;
     top:-.5rem;
-  }
-  .dotten-div,.dotten-div2{
+  } */
+  /* .dotten-div,.dotten-div2{
     display: none;
-  }
-  .circle-wrapper .ci{
+  } */
+  /* .circle-wrapper .ci{
     position: relative;
     top: -5rem;
   }
   .circle-wrapper .ci:nth-child(1),.circle-wrapper .ci:nth-child(2){
     top: -4rem;
-  }
-  .plane-img{
+  } */
+  /* .plane-img{
     display: none;
-  }
+  } */
 }
+
 
 @media screen and (max-width: 320px) {
   .nav-right .search-d2 {
